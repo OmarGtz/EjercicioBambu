@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- nombre de aplicacion-->
+    <string name="app_name">imax</string>
+
+
+    <!--Titulos tabs-->
+    <string name="title_comunidad">COMUNIDAD</string>
+    <string name="title_calificados">CALIFICADOS</string>
+
+    <!-- fragment -->
+    <string name="text_fragment_comunidad">fragment comunidad</string>
+    <string name="text_fragment_calificados">fragment calificacos</string>
+
+    <!--button -->
+    <string name="btn_publicar">PUBLICAR</string>
+    <string name="publicacion1">
+        ¡Hola buenos días a todos! ¿Alguna recomendación para mi primera venta?
+    </string>
+
+    <string name="publicacion2">
+        Educación para formar empresarios en la economía del siglo XXI, conoce las tendencias y enfoque Network, ya que es la industria de mayor crecimiento a nivel mundial, Oradores de talla internacional, No se pierdan del evento.
+
+    </string>
+
+    <string name="publicacion3">
+        ¡Hola buenas noches a todos! ¿que me recomiendarian para mejorar mis ventas?!
+    </string>
+
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_height="@dimen/tabLayout_height"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:elevation="4dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="24dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    tools:showIn="@layout/activity_main" />

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="@dimen/margin_vetical"
+    android:layout_marginTop="@dimen/margin_vetical"
+    android:clickable="true"
+    android:focusable="true"
+    card_view:cardCornerRadius="4dp"
+    android:background="@color/cardColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="64dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginTop="6dp"
+                android:src="@drawable/persona1"
+                android:padding="8dp"
+                android:id="@+id/publicacion_img"
+                android:layout_width="@dimen/img_size"
+                android:layout_height="@dimen/img_size"
+                card_view:civ_border_width="2dp"
+                card_view:civ_border_color="@color/colorCielo"/>
+            <TextView
+                android:id="@+id/publicacion_nombre"
+                style="@style/text_title"
+                android:layout_toRightOf="@id/publicacion_img"
+                 />
+
+
+            <TextView
+                android:id="@+id/publicacion_fecha"
+               style="@style/text_subtitle"
+                android:layout_below="@+id/publicacion_nombre"
+                android:layout_toRightOf="@+id/publicacion_img" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/publicacion_contenido"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text=""
+            android:layout_marginBottom="18dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e6e6e6"/>
+
+        <LinearLayout
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:clickable="true"
+                >
+
+                <ImageButton
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_favorite_black_24px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+                <TextView
+                    android:id="@+id/publicacion_favoritos"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/publicacion_comentarios"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="122 comentarios"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:textSize="13sp"/>
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:clickable="true"
+                android:gravity="right">
+                <ImageButton
+                    android:background="@drawable/ic_border_color_black_24px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:textSize="13sp"
+                    android:text="Responder"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
